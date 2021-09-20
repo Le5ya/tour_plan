@@ -1,4 +1,9 @@
 const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
   // Optional parameters
   loop: true,
 
@@ -7,4 +12,5 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+
 });
