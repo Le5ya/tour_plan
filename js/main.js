@@ -1,4 +1,9 @@
 const hotelSlider = new Swiper('.hotel-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+  enabled: true,
+  },
   // Optional parameters
   loop: true,
   // Navigation arrows
@@ -9,6 +14,12 @@ const hotelSlider = new Swiper('.hotel-slider', {
   effect: "coverflow",
 });
 const reviewsSlider = new Swiper('.reviews-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+  enabled: true,
+  },
+
   // Optional parameters
   loop: true,
   // Navigation arrows
