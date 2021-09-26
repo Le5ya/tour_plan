@@ -1,0 +1,89 @@
+.packages
+  padding: 60px 0 98px 0
+  &-title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 75px
+  &-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-row-gap: 30px
+    grid-column-gap: 30px
+    &__element:nth-child(1)
+      grid-column-start: 1
+      grid-column-end: 3
+      padding: 0
+  &-cards
+    display: flex
+    justify-content: center
+    object-fit: fill
+  &-card
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 350px
+    height: 500px
+    border-radius: 8px
+    &__button
+      position: absolute
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 16px
+      color: $light
+      margin-left: 200px
+      margin-top: 400px
+      padding: 7px 22px
+      border: none
+      border-radius: 4px
+      background-color: $primery
+      cursor: pointer
+    &__title
+      margin-left: 20px
+      font-size: 18px
+      line-height: 22px
+    &--other
+      margin: 0
+    &--text
+      font-size: 14px
+      line-height: 18px
+      margin-right: -8px
+    &__main
+      width: 100%
+      min-height: 250px
+      object-fit: cover
+    &__image
+      min-width: 360px
+      height: 100%
+      border-radius: 8px 0 0 8px
+      margin-left: -8px
+    &__footer
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      min-height: 50%
+      padding: 50px
+      font-weight: 400
+      font-style: normal
+      font-size: 12px
+      line-height: 15px
+      background-color: $dark
+      color: $light
+      border-radius: 0 0 8px 8px
+    &--first
+      max-width: 370px
+      border-radius: 8px 0 0 8px
+    &--text
+      width: 370px
+      background: $dark
+      padding: 20px 34px
+      color: $light
+      border-radius: 0 8px 8px 0
+.room
+  margin-bottom: 10px

@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=51fba76d-2e68-42b1-9f2e-02ab30290d27&lang=ru_RU" type="text/javascript">
   </script>
       <script type="text/javascript">
@@ -22,7 +24,7 @@
                 zoom: 6
             });
         }
-    </script>
+  </script>
   <title>Best Tour Plan - Hotel Booking</title>
 </head>
 <body>
@@ -135,39 +137,35 @@
       </div>
      <!-- .hotel-info -->
      <div class="hotel-grid">
-       <div class="slider hotel__slider">
          <!-- Slider main container -->
-        <div class="swiper swiper-container">
+        <div class="swiper-container hotel-slider hotel__slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
-              <img class="swiper-slide_image" src="img/slide-1.jpg" alt="Slide">
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/slide-1.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide_image" src="img/slide-2.jpg" alt="Slide">
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/slide-2.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide_image" src="img/slide-3.jpg" alt="Slide">
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/slide-3.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide_image" src="img/slide-4.jpg" alt="Slide">
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/slide-4.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide_image" src="img/slide-5.jpg" alt="Slide">
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/slide-5.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide_image" src="img/slide-6.jpg" alt="Slide">
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/slide-6.jpg" alt="Slide">
             </div>
-            ...
           </div>
           <!-- If we need navigation buttons -->
-          <button class="slider-button slider-button--prev"></button>
-          <button class="slider-button slider-button--next"></button>
+          <button class="hotel-slider__button hotel-slider__button--prev"></button>
+          <button class="hotel-slider__button hotel-slider__button--next"></button>
         </div>
         <!-- .swiper-container -->
-       </div>
-       <!-- .slider -->
       <div class="hotel-right">
         <div class="booking">
           <div class="booking__info">
@@ -212,7 +210,267 @@
   <!-- /.container -->
 </section>
     <!-- hotel -->
-    <script src="js/swiper-bundle.min.js"></script>
+  <section class="packages">
+    <div class="container packages__container">
+      <h2 class="packages-title">Other Packages</h2>
+      <div class="packages-grid">
+        <div class="packages-grid__element">
+          <div class="packages-cards packages-cards__info">
+          <div class="packages-card packages-card--other">
+          <img src="img/package-1.jpg" class="packages-card__image" alt="package-1" />
+          <button class="packages-card__button packages-card__button--first">Book Now</button>
+          </div>
+          <div class="packages-card packages-card--text">
+            <div class="packages-card__main">
+              <div class="package__rating">
+                <img src="img/star.svg" alt="star" />
+                <img src="img/star.svg" alt="star" />
+                <img src="img/star.svg" alt="star" />
+                <img src="img/star.svg" alt="star" />
+                <img src="img/star.svg" alt="star" />
+              </div>
+              <span class="packags-card__title">Hotel Blue Hover</span>
+              <p class="packages-card__text">
+                Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
+                enim laborum magna llit. Ipsum est fugiat velit ea llamco do
+                esse ut in veniam sun in onsequat. Aute quis duis epteur
+                excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
+                mollit. Ipsum est fugiat velit ea ullamco do
+              </p>
+            </div>
+            <div class="packages-card__footer">
+              <div class="place">
+                <img src="img/map-pin.svg" alt="" />
+                <span class="packag__span">1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="gests">
+                <img src="img/user.svg" alt="icon:user" />
+                <span class="gests">2 x Guests</span>
+              </div>
+              <div class="room">
+                <img src="img/home.svg" alt="icone:home" />
+                <span class="home">1 x Room</span>
+              </div>
+              <div class="old-price"><s>$ 10,500</s></div>
+              <div class="new-price">$ 8,500</div>
+            </div>
+            <button class="packages-card__button">Book Now</button>
+          </div>
+          </div>
+        </div>
+        <div class="packages-grid__element">
+            <div class="packages-card packages-card--other">
+            <div class="packages-card__main">
+              <img src="img/package-2.jpg" class= package-card__picture alt="package-3" />
+            </div>
+            <div class="packages-card__footer">
+              <div class="place">
+                <img src="img/map-pin.svg" alt="" />
+                <span class="packag__span">1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="gests">
+                <img src="img/user.svg" alt="icon:user" />
+                <span class="gests">2 x Guests</span>
+              </div>
+              <div class="room">
+                <img src="img/home.svg" alt="icone:home" />
+                <span class="home">1 x Room</span>
+              </div>
+              <div class="old-price"><s>$ 8,500</s></div>
+              <div class="new-price">$ 3,000</div>
+            </div>
+            <button class="packages-card__button">Book Now</button>
+          </div>
+        </div>
+        <div class="packages-grid__element">
+        <div class="packages-card">
+          <div class="packages-card__main">
+            <img src="img/package-3.jpg" class= package-card__picture alt="package-" />
+          </div>
+          <div class="packages-card__footer">
+            <div class="place">
+              <img src="img/map-pin.svg" alt="" />
+              <span class="packag__span">1749 Wheeler Ridge Delaware</span>
+            </div>
+            <div class="gests">
+              <img src="img/user.svg" alt="icon:user" />
+              <span class="gests">2 x Guests</span>
+            </div>
+            <div class="room">
+              <img src="img/home.svg" alt="icone:home" />
+              <span class="home">1 x Room</span>
+            </div>
+            <div class="old-price"><s>$ 8,500</s></div>
+            <div class="new-price">$ 3,000</div>
+          </div>
+          <button class="packages-card__button">Book Now</button>
+        </div>
+        </div>
+        <div class="packages-grid__element">  <div class="packages-card">
+          <div class="packages-card__main">
+            <img src="img/package-4.jpg" class= package-card__picture alt="package-4" />
+          </div>
+          <div class="packages-card__footer">
+            <div class="place">
+              <img src="img/map-pin.svg" alt="" />
+              <span class="packag__span">1749 Wheeler Ridge Delaware</span>
+            </div>
+            <div class="gests">
+              <img src="img/user.svg" alt="icon:user" />
+              <span class="gests">2 x Guests</span>
+            </div>
+            <div class="room">
+              <img src="img/home.svg" alt="icone:home" />
+              <span class="home">1 x Room</span>
+            </div>
+            <div class="old-price"><s>$ 8,500</s></div>
+            <div class="new-price">$ 3,000</div>
+          </div>
+          <button class="packages-card__button">Book Now</button>
+        </div> </div>
+        <div class="packages-grid__element">
+            <div class="packages-card">
+              <div class="packages-card__main">
+                <img src="img/package-5.jpg" class="packages-card__picture" alt="package-5" />
+              </div>
+              <div class="packages-card__footer">
+                <div class="place">
+                  <img src="img/map-pin.svg" alt="" />
+                  <span class="packag__span">1749 Wheeler Ridge Delaware</span>
+                </div>
+                <div class="gests">
+                  <img src="img/user.svg" alt="icon:user" />
+                  <span class="gests">2 x Guests</span>
+                </div>
+                <div class="room">
+                  <img src="img/home.svg" alt="icone:home" />
+                  <span class="home">1 x Room</span>
+                </div>
+                <div class="old-price"><s>$ 8,500</s></div>
+                <div class="new-price">$ 3,000</div>
+              </div>
+              <button class="packages-card__button">Book Now</button>
+            </div> 
+        </div>
+      </div>
+      </div>
+      <!-- .packages-grid -->
+    </div>
+    <!-- .container -->
+  </section>
+    <!-- package -->
+<section class="newsletter">
+     <div class="newsletter-wrapper">
+       <div class="parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpeg"></div>
+      <h2 class="newsletter-title newsletter__title">subsribe to our
+        <span class="newsletter-title__strong">Newsletter</span>
+      </h2>
+      <form action="#" class="subscribe header__search">
+        <input type="text" class="subscribe__input" placeholder="Your email address"/>
+        <button class="subscribe__button">Send</button>
+      </form>
+    </div>
+  </div> 
+</section>
+<section class="reviews">
+  <div class="container">
+    <h2 class="reviews__title">What people thinks about us</h2>
+    <div class="swiper-container reviews-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar.jpg" alt="Photo:Megan Fox" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Megan Fox</h3>
+              <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+              <div class="reviews-slider__rating">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+            </div>
+            </div>
+            <!-- /.review-slider__profile -->
+            <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+            </p>
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-1.jpg" alt="Photo:Megan Fox" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Chris Hedgehog</h3>
+              <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+              <div class="reviews-slider__rating">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+            </div>
+            </div>
+            <!-- /.review-slider__profile -->
+            <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+            </p>
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-2.jpg" alt="Photo:Megan Fox" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Sidny Rabbit</h3>
+              <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+              <div class="reviews-slider__rating">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+            </div>
+            </div>
+            <!-- /.review-slider__profile -->
+            <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+            </p>
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-3.jpg" alt="Photo:Megan Fox" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Harrison Crow</h3>
+              <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+              <div class="reviews-slider__rating">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+            </div>
+            </div>
+            <!-- /.review-slider__profile -->
+            <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+            </p>
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- swiper-slide -->
+      </div>
+      <!-- slider-wrapper -->
+      <button class="reviews-slider__button reviews-slider__button--next"></button>
+      <button class="reviews-slider__button reviews-slider__button--prev"></button>
+    </div>
+    <!-- review-slider -->
+  </div>
+  <!-- container -->
+</section>
+<script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
