@@ -1,4 +1,3 @@
-
 <?php
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
@@ -26,16 +25,16 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 0;
     // $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'tolstyhl689@gmail.com'; // Логин на почте
     $mail->Password   = 'tolstyhl689MortKelCut'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('tolstylilia78@gmail.com', 'Лилия Толстых'); // Адрес самой почты и имя отправителя
+    $mail->SMTPSecure = 'tls';
+    $mail->Port       = 587;
+    $mail->setFrom('tolstyhl689@gmail.com', 'Лилия Толстых'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('liliatolstyh@yandex.ru');  
@@ -46,7 +45,10 @@ $mail->Subject = $title;
 $mail->Body = $body;    
 
 // Проверяем отравленность сообщения
-if ($mail->send()) {$result = "success";} 
+if ($mail->send()) {
+    $result = "success";
+    header('Location:thankyou.html');   
+} 
 else {$result = "error";}
 
 } catch (Exception $e) {
@@ -55,4 +57,3 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
