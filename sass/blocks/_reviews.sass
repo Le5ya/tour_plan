@@ -9,6 +9,7 @@
     text-transform: uppercase
   &-slider
     position: relative
+    overflow: hidden
     &__item
       position: relative
       display: flex
@@ -27,7 +28,6 @@
         width: 70px
         height: 47px
         background-image: url(../img/quote-left.svg)
-        background-repeat: no-repeat
       &:after
         content: ''
         position: absolute
@@ -36,7 +36,6 @@
         width: 70px
         height: 47px
         background-image: url(../img/quote-right.svg)
-        background-repeat: no-repeat
     &__button
       position: absolute
       top: 50%
