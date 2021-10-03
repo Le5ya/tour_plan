@@ -49,6 +49,14 @@ menuButton.on('click', function(){
     modalDialog.removeClass('modal__dialog--visible');
 
   }
+   $(document).keyup(function(event) {
+    if (event.keyCode == 27) {
+        $(".modal__overlay").hide();
+        $(".modal__dialog").hide();
+    }
+  
+});
 
+  
 
 });
