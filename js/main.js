@@ -23,6 +23,9 @@ let menuButton = $(".menu-button");
 menuButton.on('click', function(){
  $(".navbar-bottom").toggleClass("navbar-bottom--visible")
 });
+
+
+
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $(".modal__close");
 
@@ -48,4 +51,4 @@ menuButton.on('click', function(){
   }
 
 
-})
+});
