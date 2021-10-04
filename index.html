@@ -230,7 +230,7 @@
       <span class="newsletter-title__strong">Newsletter</span>
     </h2>
     <form action="#" class="subscribe header__search">
-      <input type="text" class="subscribe__input" placeholder="Your email address"/>
+      <input type="e-mail" class="subscribe__input" placeholder="Your email address"/>
       <button class="subscribe__button">Send</button>
     </form>
   </div>
@@ -447,17 +447,27 @@
       <!-- footer__contact-details -->
       <div class="footer__contact-form">
         <h3 class="footer__title">Send us a message</h3>
-        <form action="send.php" method="POST" class="footer__form">
+        <form action="send.php" method="POST" class="footer__form form">
 
-          <input type="text" 
-                  class="input footer__input" 
-                  placeholder="Your Fullname" 
-                  name="name">
+          <div class="footer__input-group">
+            <input type="text" 
+                   class="input footer__input" 
+                   placeholder="Your Fullname" 
+                   name="name"
+                   required
+                   minlength="3">
+          </div>
+          <div class="footer__input-group">
+            <input type="tel" 
+                   class="input footer__input" 
+                   placeholder="Phone Number" 
+                   data-mask="+7 (999) 999-99-99"
+                   name="phone"
+                   data-mask="+7 (999) 999-99-99" 
+                   required>
+          </div>
 
-          <input type="text" 
-                  class="input footer__input" 
-                  placeholder="Phone Number" 
-                  name="phone">
+
 
           <textarea class="message footer__message" 
                     placeholder="Message" 
@@ -485,20 +495,25 @@
       <img src="img/close.svg" alt="icon:close">
     </a>
     <h3 class="modal__title modal__title--mb-3">Booking</h3>
-    <form action="send.php" method="POST" class="modal__form">
+    <form action="send.php" method="POST" class="modal__form form">
           <input type="text" 
                   class="input modal__input" 
                   placeholder="Your Fullname" 
-                  name="name">
+                  name="name"
+                  required
+                  minlength="3">
 
-          <input type="text" 
+          <input type="tel" 
                   class="input modal__input" 
-                  placeholder="Phone Number" 
-                  name="phone">
-          <input type="text" 
+                  placeholder="Phone Number"
+                  data-mask="+7 (999) 999-99-99" 
+                  name="phone"
+                  required>
+          <input type="email" 
                   class="input modal__input" 
                   placeholder="E-mail" 
-                  name="e-mail">
+                  name="e-mail"
+                  required>
 
           <textarea class="message modal__message" 
                     placeholder="Message" 
@@ -518,20 +533,24 @@
       <img src="img/close.svg" alt="icon:close">
     </a>
     <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
-    <form action="send.php" method="POST" class="modal__form">
+    <form action="send.php" method="POST" class="modal__form form">
           <input type="text" 
                   class="input modal__input" 
                   placeholder="Your Fullname" 
-                  name="name">
+                  name="name" 
+                  required>
 
-          <input type="text" 
+          <input type="tel" 
                   class="input modal__input" 
                   placeholder="Phone Number" 
-                  name="phone">
-          <input type="text" 
+                  data-mask="+7 (999) 999-99-99"
+                  name="phone"
+                  required>
+          <input type="email" 
                   class="input modal__input" 
                   placeholder="E-Mail" 
-                  name="e-mail">
+                  name="e-mail"
+                  required>
 
           <textarea class="message modal__message" 
                     placeholder="Message" 
@@ -545,6 +564,8 @@
 <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
