@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Tour Plan - Hotel Booking</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,27 +14,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Best Tour Plan - Hotel Booking</title>
 </head>
 <body>
   <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horizontal-logo.svg" 
           alt="Logo:Best Tour Plan"
           class="logo-image"
           />
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form data-aos="fade-right" data-aos-delay="200" action="#" class="search navbar__search navbar__search--mobile--hidden" >
           <input type="text" class="search__input"
           placeholder="Search Location"/>
           <button class="search__button">
             <img src="img/search.svg" alt="Icon:search">
           </button>
         </form>
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right"
+        data-aos-delay="300">
           <img src="img/user-avatar.jpg" 
           alt="avatar: Nathan" 
           class="user__avatar"
@@ -138,7 +140,7 @@
           </div>
           <!-- /.hotel-info__text -->
           <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
-            <span class="rating__text">User Ratting</span>
+            <span class="rating__text">User Rating</span>
             <span class="rating__counter">4.5/5</span>
           </div>
           <!-- /.hotel-info__right -->
@@ -225,11 +227,11 @@
 <!-- hotel -->
 <section class="newsletter">
   <div class="newsletter-wrapper">
-    <h2 class="newsletter-title newsletter__title">
+    <h2 class="newsletter-title newsletter__title" data-aos="fade-down-right" data-aos-delay="100">
       subsribe to our
-      <span class="newsletter-title__strong">Newsletter</span>
+      <span class="newsletter-title__strong" data-aos="fade-down-right" data-aos-delay="100">Newsletter</span>
     </h2>
-    <form action="#" class="subscribe header__search">
+    <form action="#" class="subscribe header__search" data-aos="fade-down-left" data-aos-delay="100">
       <input type="e-mail" class="subscribe__input" placeholder="Your email address"/>
       <button class="subscribe__button">Send</button>
     </form>
@@ -337,25 +339,25 @@
   <div class="container">
     <h2 class="activities__title">Other Activities</h2>
     <div class="activities-wrapper">
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
         <img src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
         <h3 class="card__title">The curious corner of chamarel</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- card -->
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
         <img src="img/activities-2.jpg" alt="Gymkhana club golfcourse" class="card__image">
         <h3 class="card__title">Gymkhana club golfcourse</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- card -->
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
         <img src="img/activities-3.jpg" alt="Tamarind falls hikingtrip - full day" class="card__image">
         <h3 class="card__title">Tamarind falls hikingtrip - full day</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- card -->
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
         <img src="img/activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
         <h3 class="card__title">The blue marine discovery quest</h3>
         <button class="card__button">Book Now</button>
@@ -370,7 +372,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-wrapper">
-      <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+      <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" data-aos="flip-up">
       <div class="footer-list footer__categories">
         <h3 class="footer__title">ALL CATEGORIES</h3>
         <ul class="footer__ul">
@@ -425,18 +427,18 @@
         <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
         <p class="footer_text">Feel free to contact us by phone, email or by our contact form</p>
         <ul class="footer__ul">
-          <li class="footer__item footer__item--mb-2">
+          <li class="footer__item footer__item--mb-2" data-aos="zoom-in-up">
             <div class="footer__icon-wrapper">
               <img src="img/map-marker.svg" alt="Icon:map-marker" class="footer__icon"></div>
             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
           </li>
-          <li class="footer__item footer__item--mb-2">
+          <li class="footer__item footer__item--mb-2" data-aos="zoom-in-up">
             <div class="footer__icon-wrapper"><img src="img/phone.svg" alt="Icon:phone" class="footer__icon"></div>
             Tel (business hours) : 269 1500<br>
             Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
             Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
           </li>
-          <li class="footer__item footer__item--mb-2">
+          <li class="footer__item footer__item--mb-2" data-aos="zoom-in-up">
            <div class="footer__icon-wrapper">
               <img src="img/mail.svg" alt="Icon:mail" class="footer__icon"></div>
             cherly.lawson@example.com
@@ -566,6 +568,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
