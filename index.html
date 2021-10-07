@@ -12,7 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="fonts/Muli.woff">
+  <link rel="stylesheet" href="fonts/Muli.woff2">
+  <link rel="stylesheet" href="fonts/Muli-Bold.woff">
+  <link rel="stylesheet" href="fonts/Muli-Bold.woff2">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
@@ -22,7 +26,7 @@
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
-          <img src="img/horizontal-logo.svg" 
+          <img src="img/horizontal-logo.png" 
           alt="Logo:Best Tour Plan"
           class="logo-image"
           />
@@ -50,7 +54,6 @@
         </button>
       </div>
       <!-- /.navbar-top -->
-
     </div>
     <!-- /.container -->
     <div class="navbar-bottom">
@@ -117,7 +120,7 @@
       </ul>
     </nav>
     <!-- /.breadcrumb -->
-  </div>>
+  </div>
 <section class="hotel">
   <div class="container">
         <div class="hotel-info">
@@ -141,7 +144,7 @@
           <!-- /.hotel-info__text -->
           <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
             <span class="rating__text">User Rating</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter"><span class="rating__counter--num">4.5</span>/<span class="rating__counter--sub">5</span></span>
           </div>
           <!-- /.hotel-info__right -->
         </div>
@@ -239,7 +242,7 @@
 </section>
 <section class="reviews">
   <div class="container">
-    <h2 class="reviews__title">What people thinks about us</h2>
+    <h2 class="reviews__title">What people think about us</h2>
     <div class="swiper-container reviews-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -372,7 +375,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-wrapper">
-      <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" data-aos="flip-up">
+      <a href="#"><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" data-aos="flip-up"/></a>
       <div class="footer-list footer__categories">
         <h3 class="footer__title">ALL CATEGORIES</h3>
         <ul class="footer__ul">
@@ -403,11 +406,11 @@
       <div class="footer__social-network">
         <h3 class="footer__title footer__title--inline">Social Network</h3>
         <div class="footer__social-links">
-          <a href="#" class="footer__link">
+          <a href="https://www.facebook.com/LiliaTolstych/" class="footer__link">
             <img src="img/facebook.svg" alt="Icon:facebook"></a>
-          <a href="#" class="footer__link">
+          <a href="https://www.youtube.com/" class="footer__link">
             <img src="img/youtube.svg" alt="Icon:youtube"></a>
-          <a href="#" class="footer__link">
+          <a href="https://www.instagram.com/liliiatolstykh/" class="footer__link">
             <img src="img/instagram.svg" alt="Icon:instagram"></a>
         </div>
         <!-- footer-social__links -->
@@ -428,20 +431,25 @@
         <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
         <ul class="footer__ul">
           <li class="footer__item footer__item--mb-2" data-aos="zoom-in-up">
+            <a href="#" class="footer__item footer__item--link">
             <div class="footer__icon-wrapper">
               <img src="img/map-marker.svg" alt="Icon:map-marker" class="footer__icon"></div>
-            9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+            </a>
           </li>
           <li class="footer__item footer__item--mb-2" data-aos="zoom-in-up">
-            <div class="footer__icon-wrapper"><img src="img/phone.svg" alt="Icon:phone" class="footer__icon"></div>
-            Tel (business hours) : 269 1500<br>
-            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
+            <a href="#" class="footer__item footer__item--link">
+              <div class="footer__icon-wrapper"><img src="img/phone.svg" alt="Icon:phone" class="footer__icon"></div>
+                Tel (business hours) : 269 1500<br>
+                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
+                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
+            </a>
           </li>
           <li class="footer__item footer__item--mb-2" data-aos="zoom-in-up">
-           <div class="footer__icon-wrapper">
-              <img src="img/mail.svg" alt="Icon:mail" class="footer__icon"></div>
-            cherly.lawson@example.com
+            <a href="#" class="footer__item footer__item--link">
+              <div class="footer__icon-wrapper"><img src="img/mail.svg" alt="Icon:mail" class="footer__icon"></div> 
+                cherly.lawson@example.com
+            </a>
           </li>
         </ul>
         <!-- /.footer__ul -->
