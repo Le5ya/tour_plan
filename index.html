@@ -25,14 +25,14 @@
   <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
+        <a href="#" class="logo navdar__logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horizontal-logo.png" 
           alt="Logo:Best Tour Plan"
           class="logo-image"
           />
         </a>
         <form data-aos="fade-right" data-aos-delay="200" action="#" class="search navbar__search navbar__search--mobile--hidden" >
-          <input type="text" class="search__input"
+          <input type="text" class="input search__input"
           placeholder="Search Location"/>
           <button class="search__button">
             <img src="img/search.svg" alt="Icon:search">
@@ -82,10 +82,10 @@
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotels</a>
+            <a href="#hotels" class="navbar-menu__link">Hotels</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Activities</a>
+            <a href="#activities" class="navbar-menu__link">Activities</a>
           </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
@@ -121,7 +121,7 @@
     </nav>
     <!-- /.breadcrumb -->
   </div>
-<section class="hotel">
+<section class="hotel" id="hotels">
   <div class="container">
         <div class="hotel-info">
           <div class="hotel-info__text">
@@ -158,27 +158,29 @@
             <div class="swiper-slide hotel-slider__item">
               <img class="hotel-slider__image" src="img/slide-1.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide hotel-slider__item">
+            <div class="swiper-slide">
               <img class="hotel-slider__image" src="img/slide-2.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide hotel-slider__item">
+            <div class="swiper-slide">
               <img class="hotel-slider__image" src="img/slide-3.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide hotel-slider__item">
+            <div class="swiper-slide">
               <img class="hotel-slider__image" src="img/slide-4.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide hotel-slider__item">
+            <div class="swiper-slide">
               <img class="hotel-slider__image" src="img/slide-5.jpg" alt="Slide">
             </div>
-            <div class="swiper-slide hotel-slider__item">
+            <div class="swiper-slide">
               <img class="hotel-slider__image" src="img/slide-6.jpg" alt="Slide">
             </div>
+            ...
           </div>
           <!-- If we need navigation buttons -->
           <button class="hotel-slider__button hotel-slider__button--prev"></button>
           <button class="hotel-slider__button hotel-slider__button--next"></button>
         </div>
         <!-- .swiper-container -->
+
       <div class="hotel-right">
         <div class="booking">
           <div class="booking__info">
@@ -210,14 +212,15 @@
           </a>
           </div>
           <!--/.booking__call-center  -->
-          <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
+          <button data-toggle="modal" data-href="#rating-modal" class="button booking__button">View Other Options</button>
         </div>
         <!-- /.booking -->
         <div class="map">
           <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412124696304!2d98.29255281479028!3d7.890757407947472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1632223803527!5m2!1sru!2sru" width="347" height="213" style="border:0;" allowfullscreen=""
-           aria-hidden="false"
-           tabindex="0"></iframe>
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412124696304!2d98.29255281479028!3d7.890757407947472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1632223803527!5m2!1sru!2sru" width="100%" height="213px" frameborder="0" style="border:0;" allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0">
+        </iframe>
         </div>
        <!-- .map -->
       </div>
@@ -263,14 +266,14 @@
             <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
             </p>
           </div>
-          <!-- /.reviews-slider__item -->
+            <!-- /.reviews-slider__item -->
         </div>
         <!-- swiper-slide -->
         <div class="swiper-slide">
           <div class="reviews-slider__item">
             <div class="reviews-slider__profile">
               <img src="img/reviews-avatar-1.jpg" alt="Photo:Megan Fox" class="reviews-slider__avatar">
-              <h3 class="reviews-slider__username">Chris Hedgehog</h3>
+              <h3 class="reviews-slider__username">Megan Fox</h3>
               <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
               <div class="reviews-slider__rating">
               <img src="img/star.svg" alt="star">
@@ -284,14 +287,35 @@
             <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
             </p>
           </div>
-          <!-- /.reviews-slider__item -->
+            <!-- /.reviews-slider__item -->
+        </div>
+        <!-- swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-1.jpg" alt="Photo:Megan Fox" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Bob Rabbit</h3>
+              <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+              <div class="reviews-slider__rating">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+            </div>
+            </div>
+            <!-- /.review-slider__profile -->
+            <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+            </p>
+          </div>
+            <!-- /.reviews-slider__item -->
         </div>
         <!-- swiper-slide -->
         <div class="swiper-slide">
           <div class="reviews-slider__item">
             <div class="reviews-slider__profile">
               <img src="img/reviews-avatar-2.jpg" alt="Photo:Megan Fox" class="reviews-slider__avatar">
-              <h3 class="reviews-slider__username">Sidny Rabbit</h3>
+              <h3 class="reviews-slider__username">Dave Ravan </h3>
               <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
               <div class="reviews-slider__rating">
               <img src="img/star.svg" alt="star">
@@ -312,7 +336,7 @@
           <div class="reviews-slider__item">
             <div class="reviews-slider__profile">
               <img src="img/reviews-avatar-3.jpg" alt="Photo:Megan Fox" class="reviews-slider__avatar">
-              <h3 class="reviews-slider__username">Harrison Crow</h3>
+              <h3 class="reviews-slider__username"></h3>
               <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
               <div class="reviews-slider__rating">
               <img src="img/star.svg" alt="star">
@@ -334,14 +358,14 @@
       <button class="reviews-slider__button reviews-slider__button--next"></button>
       <button class="reviews-slider__button reviews-slider__button--prev"></button>
     </div>
-    <!-- review-slider -->
+    <!-- reviews-slider -->
   </div>
   <!-- container -->
 </section>
-<section class="activities">
+<section class="activities" id="activities">
   <div class="container">
     <h2 class="activities__title">Other Activities</h2>
-    <div class="activities-wrapper">
+    <div class="wrapper activities__wrapper">
       <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
         <img src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
         <h3 class="card__title">The curious corner of chamarel</h3>
@@ -375,7 +399,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-wrapper">
-      <a href="#"><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" data-aos="flip-up"/></a>
+      <a href="#" class="logo footer__logo" data-aos="flip-up"><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" data-aos="flip-up"/></a>
       <div class="footer-list footer__categories">
         <h3 class="footer__title">ALL CATEGORIES</h3>
         <ul class="footer__ul">
